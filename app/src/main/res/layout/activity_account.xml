@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp"
+        tools:context=".Fragment_Account">
+
+        <ImageView
+            android:id="@+id/back_btn_account"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/icon_account"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/account_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:text="아이디"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon_account" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="닉네임"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="이메일"
+            app:layout_constraintStart_toStartOf="@id/textView2"
+            app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="phone-num"
+            app:layout_constraintStart_toStartOf="@id/textView5"
+            app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+        <!--          기입란             -->
+        <!--id-->
+        <EditText
+            android:id="@+id/edittext_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Id"
+            android:inputType="text"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@id/id_change_btn"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        <TextView
+            android:id="@+id/textview_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Id"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textColorHint="@color/labang_hint"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_id"
+            app:layout_constraintEnd_toStartOf="@id/id_change_btn"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
+
+        <!--Name-->
+        <EditText
+            android:id="@+id/edittext_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@id/name_change_btn"
+            app:layout_constraintStart_toStartOf="@id/textView2"
+            app:layout_constraintTop_toBottomOf="@id/textView2" />
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textSize="20sp"
+            android:textColorHint="@color/labang_hint"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_name"
+            app:layout_constraintEnd_toStartOf="@id/name_change_btn"
+            app:layout_constraintStart_toStartOf="@id/textView2"
+            app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+        <!--Email-->
+        <EditText
+            android:id="@+id/edittext_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@id/email_change_btn"
+            app:layout_constraintStart_toStartOf="@id/textView5"
+            app:layout_constraintTop_toBottomOf="@id/textView5" />
+        <TextView
+            android:id="@+id/textview_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:textColorHint="@color/labang_hint"
+            android:textStyle="bold"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_email"
+            app:layout_constraintEnd_toStartOf="@id/email_change_btn"
+            app:layout_constraintStart_toStartOf="@id/textView5"
+            app:layout_constraintTop_toBottomOf="@id/textView5" />
+
+        <!--phone_num-->
+        <EditText
+            android:id="@+id/edittext_phone_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="phone_num"
+            android:inputType="phone"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@id/phNum_change_btn"
+            app:layout_constraintStart_toStartOf="@id/textView6"
+            app:layout_constraintTop_toBottomOf="@id/textView6" />
+        <TextView
+            android:id="@+id/textview_phone_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="phone_num"
+            android:textSize="20sp"
+            android:textColorHint="@color/labang_hint"
+            android:textStyle="bold"
+            android:inputType="phone"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_phone_num"
+            app:layout_constraintEnd_toStartOf="@id/phNum_change_btn"
+            app:layout_constraintStart_toStartOf="@id/textView6"
+            app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+        <!--수정 버튼-->
+        <Button
+            android:id="@+id/id_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="수정"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edittext_id" />
+
+        <Button
+            android:id="@+id/name_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="수정"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edittext_name" />
+
+        <Button
+            android:id="@+id/email_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="수정"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edittext_email" />
+
+        <Button
+            android:id="@+id/phNum_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:text="수정"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/edittext_phone_num"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edittext_phone_num" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="#DAD5D5"
+            app:layout_constraintBottom_toTopOf="@id/textview_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textview_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="로그아웃"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

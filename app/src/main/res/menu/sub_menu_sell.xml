@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/update_sell"
+        android:title="수정"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/soldout_sell"
+        android:title="판매완료"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/hide_sell"
+        android:title="숨김"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/delete_sell"
+        android:title="삭제"
+        app:showAsAction="never"
+        />
+</menu>

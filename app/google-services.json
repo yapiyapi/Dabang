@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "954584730358",
+    "firebase_url": "https://chatlist-80ae6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chatlist-80ae6",
+    "storage_bucket": "chatlist-80ae6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954584730358:android:5d7b63e557ffd5d927fad7",
+        "android_client_info": {
+          "package_name": "com.example.firstproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954584730358-dv4kjaniutoluhepsa80v32k50qu6jvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firstproject",
+            "certificate_hash": "7dba8112fd7b2b286d82cf9f84022706de6fc609"
+          }
+        },
+        {
+          "client_id": "954584730358-bvataoosik42vfpeo2okkf2vrbjejags.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUNtMxdwoIYPVIOEd57fgTy2nAvIMngsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954584730358-bvataoosik42vfpeo2okkf2vrbjejags.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

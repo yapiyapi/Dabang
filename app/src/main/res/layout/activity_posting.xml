@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".Activity_Posting">
+
+        <!---          상단 바-         -->
+        <ImageView
+            android:id="@+id/back_btn_trader"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_button"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="문의 글쓰기"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/post_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="완료"
+            android:textColor="@color/labang"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!---          내용-         -->
+
+        <ImageView
+            android:id="@+id/imageplus_reg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/back_btn_trader"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/plusimage_btn" />
+
+        <EditText
+            android:id="@+id/title_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="글 제목"
+            android:inputType="text"
+            android:background="@null"
+            android:privateImeOptions="defaultInputmode=korean"
+            app:layout_constraintStart_toStartOf="@id/imageplus_reg"
+            app:layout_constraintTop_toBottomOf="@id/contour_1" />
+
+        <TextView
+            android:id="@+id/location_reg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="주소"
+            android:maxLines="1"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@id/imageplus_reg"
+            app:layout_constraintTop_toBottomOf="@id/contour_2" />
+
+        <Button
+            android:id="@+id/findLocation_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/location_reg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/location_reg" />
+
+        <EditText
+            android:id="@+id/building_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="상세주소"
+            android:inputType="text"
+            android:background="@null"
+            android:privateImeOptions="defaultInputmode=korean"
+            app:layout_constraintStart_toStartOf="@id/imageplus_reg"
+            app:layout_constraintTop_toBottomOf="@id/contour_3" />
+
+        <EditText
+            android:id="@+id/price_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="₩ 가격"
+            android:inputType="number"
+            android:background="@null"
+            app:layout_constraintStart_toStartOf="@id/imageplus_reg"
+            app:layout_constraintTop_toBottomOf="@id/contour_4" />
+
+        <EditText
+            android:id="@+id/contents_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:hint="내용을 적어주세요."
+            android:privateImeOptions="defaultInputmode=korean"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="@id/imageplus_reg"
+            app:layout_constraintTop_toBottomOf="@id/contour_5" />
+
+        <!---          구분선-         -->
+        <View
+            android:id="@+id/contour_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#DAD5D5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageplus_reg" />
+
+        <View
+            android:id="@+id/contour_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#DAD5D5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_reg" />
+
+        <View
+            android:id="@+id/contour_3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#DAD5D5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/location_reg" />
+
+
+        <View
+            android:id="@+id/contour_4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#DAD5D5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/building_reg" />
+
+        <View
+            android:id="@+id/contour_5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#DAD5D5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/price_reg" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

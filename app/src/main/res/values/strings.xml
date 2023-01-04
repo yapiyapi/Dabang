@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">라방</string>
+    <string name="text_java">hi yuhyun</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="api_key">"AIzaSyCp-9T5RD8AUU2ranCQgqg2bE8LcIGtje8"</string>
+</resources>
